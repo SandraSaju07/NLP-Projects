@@ -6,6 +6,7 @@ This project is a web application that classifies messages as **Spam** or **Ham*
 The project also addresses imbalanced data through techniques like **SMOTE** to improve classification performance. The model can be trained using algorithms such as **Naive Bayes** and **Random Forest**, and it automatically selects the best-performing algorithm.
 
 ## Project Structure
+```bash 
 SpamClassifierApp/
 │
 ├── app.py                   # The Flask application
@@ -21,7 +22,7 @@ SpamClassifierApp/
 ├── Data/SpamData.csv         # The dataset used for training the model
 ├── requirements.txt          # Python dependencies required for the project
 └── README.md                 # Project documentation
-
+```
 ## How to Run
 1. To install all the required libraries, run:
    pip install -r requirements.txt
