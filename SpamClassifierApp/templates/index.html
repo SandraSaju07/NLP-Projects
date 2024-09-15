@@ -1,0 +1,21 @@
+<!--Users will land here and enter the message they want to classify as spam or not.-->
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="'utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spam Classifier</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Spam Classifier</h1>
+            <form action="/predict" method="POST">
+                <label for="message">Enter a message: </label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                <button type="submit">Classify</button>
+            </form>
+        </div>
+    </body>
+</html>

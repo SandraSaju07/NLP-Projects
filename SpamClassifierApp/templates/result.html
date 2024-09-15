@@ -1,0 +1,18 @@
+<!--After submitting the form, the prediction result (either "Spam" or "Not Spam") will be shown on this page.-->
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spam Classification Result</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Classification Result</h1>
+            <p>The entered message is classified as: <strong>{{prediction}}</strong></p>
+            <a href="/">Classify another message</a>
+        </div>
+    </body>
+</html>
