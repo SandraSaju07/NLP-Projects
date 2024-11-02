@@ -1,0 +1,16 @@
+<!DocTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Fake News Detector</title>
+    </head>
+    <body>
+        <h1>Fake News Detector App</h1>
+        <form action="/predict" method="POST">
+            <textarea name="text" rows="5" required></textarea>
+            <button type="submit">Identify</button>
+        </form>
+    </body>
+</html>
